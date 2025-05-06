@@ -4,24 +4,21 @@
 using namespace std;
 
 // } Driver Code Ends
+
 class Solution {
   public:
     void printTriangle(int n) {
-        
         int i,j;
-        for(i=0 ; i<n; i++){
-            for(j=0; j<i+1 ; j++){
-                cout << "*" << " ";
+        for(i=0;i<n;i++){
+            for(j=0;j<=i;j++){
+                cout<<"* ";
             }
-            cout << endl;
-            }
-    }
-    int main(){
-        int n;
-        cin >> n;
-        printTriangle(n);
+            cout<<endl;
+        }
+        
     }
 };
+
 
 //{ Driver Code Starts.
 
@@ -34,7 +31,9 @@ int main() {
 
         Solution ob;
         ob.printTriangle(n);
-    }
+    
+cout << "~" << "\n";
+}
     return 0;
 }
 // } Driver Code Ends
